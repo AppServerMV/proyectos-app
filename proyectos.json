@@ -1,0 +1,21 @@
+[
+  {
+    "titulo": "Riego Inteligente",
+    "descripcion": "Sistema de riego automático con Arduino y sensor de humedad.",
+    "materiales": ["Arduino Uno", "LED", "Resistencia 220Ω", "Cables"],
+    "pasos": ["Conecta el LED al pin 13 y GND", "Conecta la resistencia en serie con el LED", "Conecta Arduino a tu PC", "Abre el IDE y sube el código"],
+    "codigos": [
+      {"codigo": "void setup() { pinMode(13, OUTPUT); } void loop() { digitalWrite(13,HIGH); delay(1000); digitalWrite(13,LOW); delay(1000); }", "tipoLenguaje": "Arduino C++", "showCodigo": true},
+      {"codigo": "import RPi.GPIO as GPIO\nimport time\nGPIO.setmode(GPIO.BCM)\nGPIO.setup(18, GPIO.OUT)\nwhile True:\n GPIO.output(18, True)\n time.sleep(1)\n GPIO.output(18, False)\n time.sleep(1)", "tipoLenguaje": "Python", "showCodigo": false}
+    ],
+    "youtubeUrl": "https://youtu.be/xxxx",
+    "esquematicoUrl": "https://link-al-esquematico.png",
+    "diagramaConexionesUrl": "https://link-diagrama-conexiones.png",
+    "fritzingUrl": "https://link-al-fritzing.fzz",
+    "archivosClasesUrl": "https://link-a-archivos.zip",
+    "tinkercadUrl": "https://www.tinkercad.com/...",
+    "presentacionUrl": "https://drive.google.com/...",
+    "autor": "Manuel Perea",
+    "imagenRes": "logo_mv"
+  }
+]
