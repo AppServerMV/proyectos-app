@@ -18,7 +18,7 @@
       {
         "codigo": "from machine import Pin\nfrom time import sleep\nled = Pin(25, Pin.OUT)\nwhile True:\n    led.value(1)\n    sleep(1)\n    led.value(0)\n    sleep(1)",
         "tipoLenguaje": "MicroPython",
-        "showCodigo": false
+        "showCodigo": true
       }
     ],
     "youtubeUrl": "https://youtu.be/xxxx",
