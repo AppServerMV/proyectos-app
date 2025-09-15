@@ -1,20 +1,11 @@
 [
   {
     "titulo": "Riego Inteligente",
-    "descripcion": "Sistema automatizado de riego con sensor de humedad",
-    "materiales": ["Arduino Uno", "Sensor de humedad", "Bomba de agua", "Cables"],
-    "pasos": [
-      "1️⃣ Conecta el sensor de humedad a Arduino",
-      "2️⃣ Configura la bomba de agua con un rele",
-      "3️⃣ Programa el Arduino para activar la bomba según humedad",
-      "4️⃣ Prueba el sistema con agua"
-    ],
+    "descripcion": "Tutorial paso a paso con Arduino",
+    "materiales": ["Arduino Uno", "LED", "Resistencia 220Ω", "Cables"],
+    "pasos": ["Conecta el LED al pin 13 y GND", "Conecta la resistencia en serie con el LED", "Conecta Arduino a tu PC", "Abre el IDE y sube el código"],
     "codigos": [
-      {
-        "codigo": "void setup() { pinMode(13, OUTPUT); } void loop() { digitalWrite(13,HIGH); delay(1000); digitalWrite(13,LOW); delay(1000); }",
-        "tipoLenguaje": "Arduino C++",
-        "showCodigo": true
-      }
+      {"codigo": "void setup() { pinMode(13, OUTPUT); } void loop() { digitalWrite(13, HIGH); delay(1000); digitalWrite(13, LOW); delay(1000); }", "tipoLenguaje": "Arduino C++", "showCodigo": true}
     ],
     "youtubeUrl": "https://youtu.be/xxxx",
     "esquematicoUrl": "https://link-al-esquematico.png",
@@ -27,126 +18,90 @@
     "showPresentacion": true,
     "showFritzing": true,
     "autor": "Manuel Perea",
-    "imagenRes": null
+    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/riego_inteligente.png"
   },
   {
     "titulo": "Joystick Control",
     "descripcion": "Controla tu robot con joystick",
-    "materiales": ["Arduino Uno", "Joystick", "Motor shield", "Motores DC"],
-    "pasos": [
-      "1️⃣ Conecta el joystick a Arduino",
-      "2️⃣ Conecta los motores al motor shield",
-      "3️⃣ Programa Arduino para leer el joystick y mover motores",
-      "4️⃣ Prueba el robot en el suelo"
-    ],
+    "materiales": ["Arduino Uno", "Joystick", "Cables", "Motor"],
+    "pasos": ["Conecta el joystick al Arduino", "Configura los pines de los motores", "Sube el código al Arduino", "Prueba el control"],
     "codigos": [
-      {
-        "codigo": "import RPi.GPIO as GPIO\nwhile True: pass",
-        "tipoLenguaje": "Python",
-        "showCodigo": false
-      }
+      {"codigo": "/* Código Arduino para joystick */", "tipoLenguaje": "Arduino C++", "showCodigo": true}
     ],
-    "youtubeUrl": "https://youtu.be/yyyy",
-    "esquematicoUrl": "https://link-al-esquematico2.png",
-    "diagramaConexionesUrl": "https://link-diagrama-conexiones2.png",
-    "fritzingUrl": "https://link-al-fritzing2.fzz",
-    "archivosClasesUrl": "https://link-a-archivos2.zip",
+    "youtubeUrl": "https://youtu.be/xxxx",
+    "esquematicoUrl": "https://link-al-esquematico.png",
+    "diagramaConexionesUrl": "https://link-diagrama-conexiones.png",
+    "fritzingUrl": "https://link-al-fritzing.fzz",
+    "archivosClasesUrl": "https://link-a-archivos.zip",
     "tinkercadUrl": "https://www.tinkercad.com/...",
     "presentacionUrl": "https://drive.google.com/...",
     "showTinkercad": true,
-    "showPresentacion": false,
+    "showPresentacion": true,
     "showFritzing": true,
     "autor": "Manuel Perea",
-    "imagenRes": null
+    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/joystick_control.png"
   },
   {
     "titulo": "Sensor de Humedad",
-    "descripcion": "Medición de humedad del suelo para plantas",
-    "materiales": ["Arduino Uno", "Sensor de humedad", "LED indicador", "Cables"],
-    "pasos": [
-      "1️⃣ Conecta el sensor al Arduino",
-      "2️⃣ Conecta un LED para indicar humedad",
-      "3️⃣ Programa Arduino para leer datos",
-      "4️⃣ Visualiza los resultados"
-    ],
+    "descripcion": "Mide la humedad del suelo",
+    "materiales": ["Arduino Uno", "Sensor de humedad", "Cables", "Resistencia"],
+    "pasos": ["Conecta el sensor al Arduino", "Configura la lectura de humedad", "Sube el código", "Prueba el sensor"],
     "codigos": [
-      {
-        "codigo": "setInterval(() => { console.log('Blink!'); }, 1000);",
-        "tipoLenguaje": "JavaScript",
-        "showCodigo": false
-      }
+      {"codigo": "/* Código Arduino para sensor humedad */", "tipoLenguaje": "Arduino C++", "showCodigo": true}
     ],
-    "youtubeUrl": "https://youtu.be/zzzz",
-    "esquematicoUrl": "https://link-al-esquematico3.png",
-    "diagramaConexionesUrl": "https://link-diagrama-conexiones3.png",
-    "fritzingUrl": "https://link-al-fritzing3.fzz",
-    "archivosClasesUrl": "https://link-a-archivos3.zip",
-    "tinkercadUrl": "https://www.tinkercad.com/...",
-    "presentacionUrl": "https://drive.google.com/...",
-    "showTinkercad": false,
-    "showPresentacion": true,
-    "showFritzing": false,
-    "autor": "Manuel Perea",
-    "imagenRes": null
-  },
-  {
-    "titulo": "Semáforo Inteligente",
-    "descripcion": "Control automático de semáforos con sensores de tráfico",
-    "materiales": ["Arduino Mega", "LED rojo, amarillo, verde", "Sensores de proximidad"],
-    "pasos": [
-      "1️⃣ Conecta LEDs a Arduino",
-      "2️⃣ Conecta sensores de proximidad",
-      "3️⃣ Programa la lógica de semáforo",
-      "4️⃣ Prueba el sistema"
-    ],
-    "codigos": [
-      {
-        "codigo": "void loop() { /* lógica del semáforo */ }",
-        "tipoLenguaje": "Arduino C++",
-        "showCodigo": true
-      }
-    ],
-    "youtubeUrl": "https://youtu.be/aaaa",
-    "esquematicoUrl": "https://link-al-esquematico4.png",
-    "diagramaConexionesUrl": "https://link-diagrama-conexiones4.png",
-    "fritzingUrl": "https://link-al-fritzing4.fzz",
-    "archivosClasesUrl": "https://link-a-archivos4.zip",
+    "youtubeUrl": "https://youtu.be/xxxx",
+    "esquematicoUrl": "https://link-al-esquematico.png",
+    "diagramaConexionesUrl": "https://link-diagrama-conexiones.png",
+    "fritzingUrl": "https://link-al-fritzing.fzz",
+    "archivosClasesUrl": "https://link-a-archivos.zip",
     "tinkercadUrl": "https://www.tinkercad.com/...",
     "presentacionUrl": "https://drive.google.com/...",
     "showTinkercad": true,
     "showPresentacion": true,
     "showFritzing": true,
     "autor": "Manuel Perea",
-    "imagenRes": null
+    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/sensor_humedad.png"
   },
   {
-    "titulo": "Robot Seguidor de Línea",
-    "descripcion": "Robot que sigue una línea negra en el suelo",
-    "materiales": ["Arduino Uno", "Sensores de línea", "Motores DC", "Chasis de robot"],
-    "pasos": [
-      "1️⃣ Conecta los sensores al Arduino",
-      "2️⃣ Conecta motores y chasis",
-      "3️⃣ Programa Arduino para seguir línea",
-      "4️⃣ Prueba el robot en el circuito"
-    ],
+    "titulo": "Luz Automática",
+    "descripcion": "Encender luces con sensor de movimiento",
+    "materiales": ["Arduino Uno", "Sensor PIR", "LED", "Resistencia"],
+    "pasos": ["Conecta el sensor PIR", "Configura los pines del LED", "Sube el código", "Prueba la luz automática"],
     "codigos": [
-      {
-        "codigo": "while True: pass",
-        "tipoLenguaje": "Python",
-        "showCodigo": false
-      }
+      {"codigo": "/* Código Arduino para luz automática */", "tipoLenguaje": "Arduino C++", "showCodigo": true}
     ],
-    "youtubeUrl": "https://youtu.be/bbbb",
-    "esquematicoUrl": "https://link-al-esquematico5.png",
-    "diagramaConexionesUrl": "https://link-diagrama-conexiones5.png",
-    "fritzingUrl": "https://link-al-fritzing5.fzz",
-    "archivosClasesUrl": "https://link-a-archivos5.zip",
+    "youtubeUrl": "https://youtu.be/xxxx",
+    "esquematicoUrl": "https://link-al-esquematico.png",
+    "diagramaConexionesUrl": "https://link-diagrama-conexiones.png",
+    "fritzingUrl": "https://link-al-fritzing.fzz",
+    "archivosClasesUrl": "https://link-a-archivos.zip",
     "tinkercadUrl": "https://www.tinkercad.com/...",
     "presentacionUrl": "https://drive.google.com/...",
-    "showTinkercad": false,
-    "showPresentacion": false,
+    "showTinkercad": true,
+    "showPresentacion": true,
     "showFritzing": true,
     "autor": "Manuel Perea",
-    "imagenRes": null
+    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/luz_automatica.png"
+  },
+  {
+    "titulo": "Brazo Robot",
+    "descripcion": "Construye un brazo robot controlado por Arduino",
+    "materiales": ["Arduino Uno", "Servos", "Cables", "Joystick"],
+    "pasos": ["Montar el brazo robot", "Conectar los servos al Arduino", "Subir el código", "Probar el movimiento"],
+    "codigos": [
+      {"codigo": "/* Código Arduino brazo robot */", "tipoLenguaje": "Arduino C++", "showCodigo": true}
+    ],
+    "youtubeUrl": "https://youtu.be/xxxx",
+    "esquematicoUrl": "https://link-al-esquematico.png",
+    "diagramaConexionesUrl": "https://link-diagrama-conexiones.png",
+    "fritzingUrl": "https://link-al-fritzing.fzz",
+    "archivosClasesUrl": "https://link-a-archivos.zip",
+    "tinkercadUrl": "https://www.tinkercad.com/...",
+    "presentacionUrl": "https://drive.google.com/...",
+    "showTinkercad": true,
+    "showPresentacion": true,
+    "showFritzing": true,
+    "autor": "Manuel Perea",
+    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/brazo_robot.png"
   }
 ]
