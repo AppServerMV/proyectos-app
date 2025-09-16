@@ -32,7 +32,7 @@
     "showPresentacion": true,
     "showFritzing": true,
     "autor": "Manuel Perea",
-    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/blink.png"
+    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/Led.png"
   },
   {
     "titulo": "Sensor de Humedad",
