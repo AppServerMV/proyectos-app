@@ -1,22 +1,24 @@
 [
   {
     "titulo": "Blink LED",
-    "descripcion": "Ejemplo clásico de encender y apagar un LED",
-    "materiales": ["Arduino Uno", "LED", "Resistencia 220Ω", "Cables"],
+    "descripcion": "Encender y apagar un LED",
+    "materiales": ["Microcontrolador Arduino o similares", "Cable USB", "PC o Celular con IDE Arduino", "Protoboard", "LED de cualquier color", "Resistencia de 220Ω", "Cables jumper"],
     "pasos": [
-      "Conecta el LED al pin 13 y GND",
-      "Conecta la resistencia en serie con el LED",
-      "Conecta Arduino a tu PC",
-      "Sube el código al Arduino"
+      "Insertar LED en protoboard pata larga (ánodo +) y pata corta (cátodo -)",
+      "Conectar resistencia 220Ω un extremo al ánodo (+) del LED",
+      "Conectar cable jumper del otro extremo de la resistencia al pin 13 de Arduino",
+      "Conectar cable jumper del cátodo (-) del LED al GND de Arduino",
+      "Conectar Arduino a PC o celular con cable USB",
+      "Subir código al Arduino"
     ],
     "codigos": [
       {
-        "codigo": "void setup() {\n  pinMode(13, OUTPUT);\n}\nvoid loop() {\n  digitalWrite(13, HIGH);\n  delay(1000);\n  digitalWrite(13, LOW);\n  delay(1000);\n}",
+        "codigo": "const int pinLED = 13;\nvoid setup() {\n  pinMode(pinLED, OUTPUT);\n}\nvoid loop() {\n  digitalWrite(pinLED, HIGH);\n  delay(1000);\n  digitalWrite(pinLED, LOW);\n  delay(1000);\n}",
         "tipoLenguaje": "Arduino C++",
         "showCodigo": true
       },
       {
-        "codigo": "from machine import Pin\nfrom time import sleep\nled = Pin(25, Pin.OUT)\nwhile True:\n    led.value(1)\n    sleep(1)\n    led.value(0)\n    sleep(1)",
+        "codigo": "from machine import Pin\nimport time\n\nled = Pin(13, Pin.OUT)\n\nwhile True:\n    led.value(1)\n    time.sleep(1)\n    led.value(0)\n    time.sleep(1)",
         "tipoLenguaje": "MicroPython",
         "showCodigo": true
       }
@@ -27,12 +29,12 @@
     "fritzingUrl": "https://link-al-fritzing.fzz",
     "archivosClasesUrl": "https://link-a-archivos.zip",
     "tinkercadUrl": "https://www.tinkercad.com/xxxx",
-    "presentacionUrl": "https://drive.google.com/xxxx",
+    "presentacionUrl": "",
     "showTinkercad": true,
-    "showPresentacion": true,
+    "showPresentacion": false,
     "showFritzing": true,
-    "autor": "Manuel Perea",
-    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/Led.png"
+    "autor": "Tnlgo. Manuel Perea",
+    "imagenUrl": ""
   },
   {
     "titulo": "Sensor de Humedad",
