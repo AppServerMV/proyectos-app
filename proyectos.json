@@ -37,103 +37,42 @@
     "imagenUrl": ""
   },
   {
-    "titulo": "Sensor de Humedad",
-    "descripcion": "Medir la humedad del suelo con Arduino",
-    "materiales": ["Arduino Uno", "Sensor de humedad", "Cables", "Resistencia 10kΩ"],
-    "pasos": ["Conecta el sensor al Arduino", "Configura el pin de lectura", "Lee los valores y muestra en Serial Monitor"],
-    "codigos": [
-      {
-        "codigo": "void setup() {\n  Serial.begin(9600);\n}\nvoid loop() {\n  int val = analogRead(A0);\n  Serial.println(val);\n  delay(1000);\n}",
-        "tipoLenguaje": "Arduino C++",
-        "showCodigo": true
-      }
-    ],
-    "youtubeUrl": "",
-    "esquematicoUrl": "",
-    "diagramaConexionesUrl": "",
-    "fritzingUrl": "",
-    "archivosClasesUrl": "",
-    "tinkercadUrl": "",
-    "presentacionUrl": "",
-    "showTinkercad": false,
-    "showPresentacion": false,
-    "showFritzing": false,
-    "autor": "Manuel Perea",
-    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/humedad.png"
-  },
-  {
-    "titulo": "Joystick Control",
-    "descripcion": "Controla un robot usando un joystick",
-    "materiales": ["Arduino Uno", "Joystick", "Motores DC", "Driver L298N", "Cables"],
-    "pasos": ["Conecta el joystick", "Conecta el driver y motores", "Sube el código al Arduino", "Prueba los movimientos"],
-    "codigos": [
-      {
-        "codigo": "// Código Arduino para joystick\nvoid setup() {}\nvoid loop() {}",
-        "tipoLenguaje": "Arduino C++",
-        "showCodigo": true
-      }
-    ],
-    "youtubeUrl": "",
-    "esquematicoUrl": "",
-    "diagramaConexionesUrl": "",
-    "fritzingUrl": "",
-    "archivosClasesUrl": "",
-    "tinkercadUrl": "",
-    "presentacionUrl": "",
-    "showTinkercad": false,
-    "showPresentacion": false,
-    "showFritzing": false,
-    "autor": "Manuel Perea",
-    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/joystick.png"
-  },
-  {
-    "titulo": "Riego Inteligente",
-    "descripcion": "Sistema de riego automático basado en humedad",
-    "materiales": ["Arduino Uno", "Bomba de agua", "Sensor de humedad", "Relay", "Cables"],
-    "pasos": ["Conectar sensores y bomba", "Programar Arduino", "Probar el sistema"],
-    "codigos": [
-      {
-        "codigo": "// Código Arduino para riego\nvoid setup() {}\nvoid loop() {}",
-        "tipoLenguaje": "Arduino C++",
-        "showCodigo": true
-      }
-    ],
-    "youtubeUrl": "",
-    "esquematicoUrl": "",
-    "diagramaConexionesUrl": "",
-    "fritzingUrl": "",
-    "archivosClasesUrl": "",
-    "tinkercadUrl": "",
-    "presentacionUrl": "",
-    "showTinkercad": false,
-    "showPresentacion": false,
-    "showFritzing": false,
-    "autor": "Manuel Perea",
-    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/riego.png"
-  },
-  {
-    "titulo": "Sensor de Luz",
-    "descripcion": "Detecta la intensidad de luz en el ambiente",
-    "materiales": ["Arduino Uno", "Fotoresistor", "Resistencia 10kΩ", "Cables"],
-    "pasos": ["Conectar el fotoresistor", "Leer valores con Arduino", "Mostrar resultados en Serial Monitor"],
-    "codigos": [
-      {
-        "codigo": "// Código Arduino para sensor de luz\nvoid setup() {}\nvoid loop() {}",
-        "tipoLenguaje": "Arduino C++",
-        "showCodigo": true
-      }
-    ],
-    "youtubeUrl": "",
-    "esquematicoUrl": "",
-    "diagramaConexionesUrl": "",
-    "fritzingUrl": "",
-    "archivosClasesUrl": "",
-    "tinkercadUrl": "",
-    "presentacionUrl": "",
-    "showTinkercad": false,
-    "showPresentacion": false,
-    "showFritzing": false,
-    "autor": "Manuel Perea",
-    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/main/images/luz.png"
-  }
+  "titulo": "Semáforo con LED",
+  "descripcion": "Simulación de un semáforo con 3 LEDs (rojo, amarillo, verde)",
+  "materiales": ["Microcontrolador Arduino o similares", "Cable USB", "PC o Celular con IDE Arduino", "Protoboard", "LED rojo", "LED amarillo", "LED verde", "3 resistencias de 220Ω", "Cables jumper"],
+  "pasos": [
+    "Insertar 3 LEDs en protoboard: rojo, amarillo y verde (cada uno con pata larga ánodo + y pata corta cátodo -)",
+    "Conectar resistencia 220Ω a cada ánodo (+) de los LEDs",
+    "Conectar cable jumper del extremo de la resistencia del LED rojo al pin 13 de Arduino",
+    "Conectar cable jumper del extremo de la resistencia del LED amarillo al pin 12 de Arduino",
+    "Conectar cable jumper del extremo de la resistencia del LED verde al pin 11 de Arduino",
+    "Conectar cable jumper de todos los cátodos (-) de los LEDs al GND de Arduino",
+    "Conectar Arduino a PC o celular con cable USB",
+    "Subir código al Arduino"
+  ],
+  "codigos": [
+    {
+      "codigo": "const int pinRojo = 13;\nconst int pinAmarillo = 12;\nconst int pinVerde = 11;\n\nvoid setup() {\n  pinMode(pinRojo, OUTPUT);\n  pinMode(pinAmarillo, OUTPUT);\n  pinMode(pinVerde, OUTPUT);\n}\n\nvoid loop() {\n  // Verde encendido\n  digitalWrite(pinVerde, HIGH);\n  delay(5000);\n  digitalWrite(pinVerde, LOW);\n  \n  // Amarillo encendido\n  digitalWrite(pinAmarillo, HIGH);\n  delay(2000);\n  digitalWrite(pinAmarillo, LOW);\n  \n  // Rojo encendido\n  digitalWrite(pinRojo, HIGH);\n  delay(5000);\n  digitalWrite(pinRojo, LOW);\n}",
+      "tipoLenguaje": "Arduino C++",
+      "showCodigo": true
+    },
+    {
+      "codigo": "from machine import Pin\nimport time\n\nrojo = Pin(13, Pin.OUT)\namarillo = Pin(12, Pin.OUT)\nverde = Pin(11, Pin.OUT)\n\nwhile True:\n    # Verde encendido\n    verde.value(1)\n    time.sleep(5)\n    verde.value(0)\n    \n    # Amarillo encendido\n    amarillo.value(1)\n    time.sleep(2)\n    amarillo.value(0)\n    \n    # Rojo encendido\n    rojo.value(1)\n    time.sleep(5)\n    rojo.value(0)",
+      "tipoLenguaje": "MicroPython",
+      "showCodigo": true
+    }
+  ],
+  "youtubeUrl": "https://youtu.be/xxxx",
+  "esquematicoUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo.jpg",
+  "diagramaConexionesUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Esquematico_Semaforo_bb.jpg",
+  "fritzingUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Esquematico_Semaforo.fzz",
+  "archivosClasesUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo.ino",
+  "tinkercadUrl": "https://www.tinkercad.com/things/xxxx-semaforo",
+  "presentacionUrl": "",
+  "showTinkercad": true,
+  "showPresentacion": false,
+  "showFritzing": true,
+  "autor": "Tnlgo. Manuel Perea",
+  "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo_thumbnail.jpg"
+}
 ]
