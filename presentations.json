@@ -29,6 +29,26 @@
       "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vTQk3KFGnnVRpb_tWJdKqk5zmLxyP6BOtAMCNlqIhEFV7nKvvtFsO6Kd6tMFVih0c8rXdx97z1ZpFUV/pub?start=false&loop=false&delayms=3000",
       "icon": "📊",
       "date": "2024-01-05"
+    },
+    {
+      "id": 4,
+      "title": "Conversión de Decimal a Binario",
+      "description": "Aprendamos a convertir de Decimal a Binario.",
+      "category": "Electrónica",
+      "url": "https://docs.google.com/presentation/d/1Wx3Lvbp64aCx-HsM_1SPlzpn6gYB7OBg-v6uWYJRZIA/edit?usp=sharing",
+      "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vQo1swGWyYNp_bvFeZ9nplYeRIOEnzVrjB8RQEWlJQ5sc4_E-QlVl6S8nvYRpJUsyYnbs1GuMy49qJl/pub?start=false&loop=false&delayms=1000",
+      "icon": "📊",
+      "date": "2025-04-24"
+    },
+    {
+      "id": 5,
+      "title": "Conversión De Binario a Decimal",
+      "description": "Aprende a transformar números binarios en decimales de forma fácil y rápida.\n",
+      "category": "Electrónica",
+      "url": "https://docs.google.com/presentation/d/18nJzTS-QKUeOi5Z1Rcr0AzHs1p9XHEgHwTHOLn85Dko/edit?usp=sharing",
+      "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vQW3wYFkD7nm3yLIsFmiJEWWQTiGk1NEC5D1iTu-7VK_WNwRzXHEGGlPGfuPaVLryzGwY4BRpafTXHh/pub?start=false&loop=false&delayms=1000",
+      "icon": "📊",
+      "date": "2025-04-25"
     }
   ]
 }
