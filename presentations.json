@@ -7,27 +7,27 @@
       "category": "Electrónica",
       "url": "https://docs.google.com/presentation/d/1TdwYXR3wtdpyc_FLWVWhfye7XUKCLHC4Khb_NkcMQbI/edit?usp=sharing",
       "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vRyCxFMeGPFcdFV8y6hvqA0_DRxNwk5e1Ip2-rBrFGW-EgLkTPDnwpbhqr1cSXwhldWTkSU4EDYYAuT/pub?start=false&loop=false&delayms=3000",
-      "icon": "📺",
+      "icon": "📊",
       "date": "2025-09-26"
     },
     {
       "id": 2,
-      "title": "Programación en C++",
-      "description": "Fundamentos de programación orientada a objetos con C++",
-      "category": "Programación",
-      "url": "https://docs.google.com/presentation/d/ejemplo2/edit",
-      "embedUrl": "https://docs.google.com/presentation/d/e/ejemplo2/embed",
-      "icon": "💻",
-      "date": "2024-01-10"
+      "title": "Divisor de Tensión",
+      "description": "Aprenderemos a usar el método Divisor de Tensión ",
+      "category": "Electrónica",
+      "url": "https://docs.google.com/presentation/d/1v0nwZTHB1PyKjYupaau75vsUze5nfG6XBY2j-8nyalY/edit?usp=sharing",
+      "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vTvoKopxkGqMHr-LObPCBWaYv0ArehLKpOpo7W-S7v5nzLlBj9S_7dt3-VMLDvrRKEN8EuKacf9wrtN/pub?start=false&loop=false&delayms=3000",
+      "icon": "📊",
+      "date": "2023-12-11"
     },
     {
       "id": 3,
-      "title": "Robótica Básica",
-      "description": "Introducción a la robótica y automatización",
-      "category": "Robótica", 
-      "url": "https://docs.google.com/presentation/d/ejemplo3/edit",
-      "embedUrl": "https://docs.google.com/presentation/d/e/ejemplo3/embed",
-      "icon": "🤖",
+      "title": "¿Cómo funciona el Pull Up y Pull Down en electrónica?",
+      "description": "Aprende a usar Pull Up y Pull Down",
+      "category": "Electrónica",
+      "url": "https://docs.google.com/presentation/d/1sFqnTM6dBT_ap9qON1z57_sP3mOiAGecHevP-Bes-co/edit?usp=sharing",
+      "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vTQk3KFGnnVRpb_tWJdKqk5zmLxyP6BOtAMCNlqIhEFV7nKvvtFsO6Kd6tMFVih0c8rXdx97z1ZpFUV/pub?start=false&loop=false&delayms=3000",
+      "icon": "📊",
       "date": "2024-01-05"
     }
   ]
