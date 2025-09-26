@@ -49,6 +49,36 @@
       "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vQW3wYFkD7nm3yLIsFmiJEWWQTiGk1NEC5D1iTu-7VK_WNwRzXHEGGlPGfuPaVLryzGwY4BRpafTXHh/pub?start=false&loop=false&delayms=1000",
       "icon": "📊",
       "date": "2025-04-25"
+    },
+    {
+      "id": 6,
+      "title": "Sistemas Numéricos - Electrónica Digital",
+      "description": "Electrónica Digital\n",
+      "category": "Electrónica",
+      "url": "https://docs.google.com/presentation/d/1ejS43YDfEX-ML0u1spUGGxdHnBublu_yp5mXZdQZBSo/edit?usp=sharing",
+      "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vTxf4DZwID7SXmhfOr30eqWJ6TceglwVgW5pXBrZ_wZ9vVAWNUoBb0LrgiW92HBFV9iQSqG4KE4A9uV/pub?start=false&loop=false&delayms=3000",
+      "icon": "📊",
+      "date": "2024-08-24"
+    },
+    {
+      "id": 7,
+      "title": "Configuración de Comandos AT para Módulos Bluetooth HC-05 y HC-06",
+      "description": "Clase N°5",
+      "category": "Electrónica",
+      "url": "https://docs.google.com/presentation/d/1Zq1BDjGd2RIUB2u8Vqd5u3MEuAFlX4NVlirp3puBJyM/edit?usp=sharing",
+      "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vSyF8eIPmnQwiz_oBvcv2MBlxPZdiKNik2bTxz1exGrW71dDDYcBgylNUK3JrCK_gyBiu-2zl9wCwr6/pub?start=false&loop=false&delayms=3000",
+      "icon": "📊",
+      "date": "2023-12-09"
+    },
+    {
+      "id": 8,
+      "title": "Introducción a los Módulos Bluetooth HC-05 y HC-06 para Principiantes",
+      "description": "Clase N°1",
+      "category": "Electrónica",
+      "url": "https://docs.google.com/presentation/d/19UuB3OJsgnhHznI4j1Kgj3jHezjiRgq80RWcbw2LfRs/edit?usp=sharing",
+      "embedUrl": "https://docs.google.com/presentation/d/e/2PACX-1vRZ_11sXfdj9TWvsptr-te9bpIK8kORRHmkSTSvvd6xuJBg02jCzmhrkasWXMaxMLLa2VSm2OESG7Cx/pub?start=false&loop=false&delayms=3000",
+      "icon": "📊",
+      "date": "2023-10-26"
     }
   ]
 }
