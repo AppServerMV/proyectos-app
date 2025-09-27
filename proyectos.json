@@ -2,7 +2,15 @@
   {
     "titulo": "Blink LED",
     "descripcion": "Encender y apagar un LED",
-    "materiales": ["Microcontrolador Arduino o similares", "Cable USB", "PC o Celular con IDE Arduino", "Protoboard", "LED de cualquier color", "Resistencia de 220Ω", "Cables jumper"],
+    "materiales": [
+      "Microcontrolador Arduino o similares",
+      "Cable USB",
+      "PC o Celular con IDE Arduino",
+      "Protoboard",
+      "LED de cualquier color",
+      "Resistencia de 220Ω",
+      "Cables jumper"
+    ],
     "pasos": [
       "Insertar LED en protoboard pata larga (ánodo +) y pata corta (cátodo -)",
       "Conectar resistencia 220Ω un extremo al ánodo (+) del LED",
@@ -32,47 +40,57 @@
     "presentacionUrl": "",
     "showTinkercad": true,
     "showPresentacion": false,
-    "showFritzing": true,
+    "showFritzing": false,
     "autor": "Tnlgo. Manuel Perea",
     "imagenUrl": ""
   },
   {
-  "titulo": "Semáforo con LED",
-  "descripcion": "Simulación de un semáforo con 3 LEDs (rojo, amarillo, verde)",
-  "materiales": ["Microcontrolador Arduino o similares", "Cable USB", "PC o Celular con IDE Arduino", "Protoboard", "LED rojo", "LED amarillo", "LED verde", "3 resistencias de 220Ω", "Cables jumper"],
-  "pasos": [
-    "Insertar 3 LEDs en protoboard: rojo, amarillo y verde (cada uno con pata larga ánodo + y pata corta cátodo -)",
-    "Conectar resistencia 220Ω a cada ánodo (+) de los LEDs",
-    "Conectar cable jumper del extremo de la resistencia del LED rojo al pin 13 de Arduino",
-    "Conectar cable jumper del extremo de la resistencia del LED amarillo al pin 12 de Arduino",
-    "Conectar cable jumper del extremo de la resistencia del LED verde al pin 11 de Arduino",
-    "Conectar cable jumper de todos los cátodos (-) de los LEDs al GND de Arduino",
-    "Conectar Arduino a PC o celular con cable USB",
-    "Subir código al Arduino"
-  ],
-  "codigos": [
-    {
-      "codigo": "const int pinRojo = 13;\nconst int pinAmarillo = 12;\nconst int pinVerde = 11;\n\nvoid setup() {\n  pinMode(pinRojo, OUTPUT);\n  pinMode(pinAmarillo, OUTPUT);\n  pinMode(pinVerde, OUTPUT);\n}\n\nvoid loop() {\n  // Verde encendido\n  digitalWrite(pinVerde, HIGH);\n  delay(5000);\n  digitalWrite(pinVerde, LOW);\n  \n  // Amarillo encendido\n  digitalWrite(pinAmarillo, HIGH);\n  delay(2000);\n  digitalWrite(pinAmarillo, LOW);\n  \n  // Rojo encendido\n  digitalWrite(pinRojo, HIGH);\n  delay(5000);\n  digitalWrite(pinRojo, LOW);\n}",
-      "tipoLenguaje": "Arduino C++",
-      "showCodigo": true
-    },
-    {
-      "codigo": "from machine import Pin\nimport time\n\nrojo = Pin(13, Pin.OUT)\namarillo = Pin(12, Pin.OUT)\nverde = Pin(11, Pin.OUT)\n\nwhile True:\n    # Verde encendido\n    verde.value(1)\n    time.sleep(5)\n    verde.value(0)\n    \n    # Amarillo encendido\n    amarillo.value(1)\n    time.sleep(2)\n    amarillo.value(0)\n    \n    # Rojo encendido\n    rojo.value(1)\n    time.sleep(5)\n    rojo.value(0)",
-      "tipoLenguaje": "MicroPython",
-      "showCodigo": true
-    }
-  ],
-  "youtubeUrl": "https://youtu.be/xxxx",
-  "esquematicoUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo.jpg",
-  "diagramaConexionesUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Esquematico_Semaforo_bb.jpg",
-  "fritzingUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Esquematico_Semaforo.fzz",
-  "archivosClasesUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo.ino",
-  "tinkercadUrl": "https://www.tinkercad.com/things/xxxx-semaforo",
-  "presentacionUrl": "",
-  "showTinkercad": true,
-  "showPresentacion": false,
-  "showFritzing": true,
-  "autor": "Tnlgo. Manuel Perea",
-  "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo_thumbnail.jpg"
-}
+    "titulo": "Semáforo con LED",
+    "descripcion": "Simulación de un semáforo con 3 LEDs (rojo, amarillo, verde)",
+    "materiales": [
+      "Microcontrolador Arduino o similares",
+      "Cable USB",
+      "PC o Celular con IDE Arduino",
+      "Protoboard",
+      "LED rojo",
+      "LED amarillo",
+      "LED verde",
+      "3 resistencias de 220Ω",
+      "Cables jumper"
+    ],
+    "pasos": [
+      "Insertar 3 LEDs en protoboard: rojo, amarillo y verde (cada uno con pata larga ánodo + y pata corta cátodo -)",
+      "Conectar resistencia 220Ω a cada ánodo (+) de los LEDs",
+      "Conectar cable jumper del extremo de la resistencia del LED rojo al pin 13 de Arduino",
+      "Conectar cable jumper del extremo de la resistencia del LED amarillo al pin 12 de Arduino",
+      "Conectar cable jumper del extremo de la resistencia del LED verde al pin 11 de Arduino",
+      "Conectar cable jumper de todos los cátodos (-) de los LEDs al GND de Arduino",
+      "Conectar Arduino a PC o celular con cable USB",
+      "Subir código al Arduino"
+    ],
+    "codigos": [
+      {
+        "codigo": "const int pinRojo = 13;\nconst int pinAmarillo = 12;\nconst int pinVerde = 11;\n\nvoid setup() {\n  pinMode(pinRojo, OUTPUT);\n  pinMode(pinAmarillo, OUTPUT);\n  pinMode(pinVerde, OUTPUT);\n}\n\nvoid loop() {\n  // Verde encendido\n  digitalWrite(pinVerde, HIGH);\n  delay(5000);\n  digitalWrite(pinVerde, LOW);\n  \n  // Amarillo encendido\n  digitalWrite(pinAmarillo, HIGH);\n  delay(2000);\n  digitalWrite(pinAmarillo, LOW);\n  \n  // Rojo encendido\n  digitalWrite(pinRojo, HIGH);\n  delay(5000);\n  digitalWrite(pinRojo, LOW);\n}",
+        "tipoLenguaje": "Arduino C++",
+        "showCodigo": true
+      },
+      {
+        "codigo": "from machine import Pin\nimport time\n\nrojo = Pin(13, Pin.OUT)\namarillo = Pin(12, Pin.OUT)\nverde = Pin(11, Pin.OUT)\n\nwhile True:\n    # Verde encendido\n    verde.value(1)\n    time.sleep(5)\n    verde.value(0)\n    \n    # Amarillo encendido\n    amarillo.value(1)\n    time.sleep(2)\n    amarillo.value(0)\n    \n    # Rojo encendido\n    rojo.value(1)\n    time.sleep(5)\n    rojo.value(0)",
+        "tipoLenguaje": "MicroPython",
+        "showCodigo": true
+      }
+    ],
+    "youtubeUrl": "https://youtu.be/xxxx",
+    "esquematicoUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo.jpg",
+    "diagramaConexionesUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Esquematico_Semaforo_bb.jpg",
+    "fritzingUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Esquematico_Semaforo.fzz",
+    "archivosClasesUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo.ino",
+    "tinkercadUrl": "https://www.tinkercad.com/things/xxxx-semaforo",
+    "presentacionUrl": "",
+    "showTinkercad": true,
+    "showPresentacion": false,
+    "showFritzing": true,
+    "autor": "Tnlgo. Manuel Perea",
+    "imagenUrl": "https://raw.githubusercontent.com/AppServerMV/proyectos-app/refs/heads/main/images/Semaforo_thumbnail.jpg"
+  }
 ]
